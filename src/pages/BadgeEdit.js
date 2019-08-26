@@ -15,11 +15,11 @@ class BadgeEdit extends React.Component{
         loading: true,
         false:null,
         form:{
-               firstName:"",
-               lastName:"",
+               nombre:"",
+               peso:"",
                email:"",
-               jobTitle:"",
-               twitter:"",
+               valor:"",
+               edad:"",
              } 
     };
    
@@ -112,12 +112,12 @@ class BadgeEdit extends React.Component{
            <div className="row">
                <div className="col-6">
                      <Badge 
-                     firstname={this.state.form.firstName || "FirstName"}  
-                     lastName={this.state.form.lastName || "LastName"} 
-                     hashtag="platziconf" 
-                     twitter={this.state.form.twitter ||'twitter' } 
-                     jobTitle={this.state.form.jobTitle || "JobPosition"}
-                     email={this.state.form.email || 'EMAIL'}
+                     nombre={this.state.form.nombre || "Nombre"}  
+                     peso={this.state.form.peso || "Peso"} 
+                     hashtag="CowList" 
+                     valor={this.state.form.valor ||'Valor' } 
+                     edad={this.state.form.edad || "Edad"}
+                     email={this.state.form.email}
                      />
                </div>
                <div className="col-6">

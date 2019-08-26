@@ -6,12 +6,12 @@ function DeleteBadgeModal (props){
 return <Modal isOpen={props.isOpen} onClose={props.onClose} >
     <div className="DeleteBadgeModal">
        <h1>
-          Are you sure?
+          ¿Estás seguro?
        </h1>
-       <p>you are about to delete this badge.</p>
+       <p>Estas a punto de borrar este registro.</p>
        <div>
-           <button onClick={props.deleteBadge} className="btn btn-danger mr-4">Delete</button>
-           <button onClick={props.onClose} className="btn btn-primary">Cancel</button>
+           <button onClick={props.deleteBadge} className="btn btn-danger mr-4">Borrar</button>
+           <button onClick={props.onClose} className="btn btn-primary">Cancelar</button>
        </div>
     </div>
 </Modal>

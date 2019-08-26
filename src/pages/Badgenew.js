@@ -12,11 +12,11 @@ class Badgenew extends React.Component{
     state= { 
         loading: false,
         form:{
-               firstName:"",
-               lastName:"",
-               email:"",
-               jobTitle:"",
-               twitter:"",
+               nombre:"",
+               peso:"",
+               valor:"",
+               edad:"",
+               email: ""
              } 
     };
    
@@ -66,10 +66,10 @@ class Badgenew extends React.Component{
            <div className="row">
                <div className="col-6">
                      <Badge 
-                     firstName={this.state.form.firstName || "FirstName"}  
-                     lastName={this.state.form.lastName || "LastName"} 
-                     twitter={this.state.form.twitter ||'twitter' } 
-                     jobTitle={this.state.form.jobTitle || "JobPosition"}
+                     nombre={this.state.form.nombre || "Nombre"}  
+                     peso={this.state.form.peso || "Peso"} 
+                     valor={this.state.form.valor} 
+                     edad={this.state.form.edad}
                      email={this.state.form.email || 'EMAIL'}
                      />
                </div>

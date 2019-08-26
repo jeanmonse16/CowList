@@ -14,7 +14,7 @@ function useSearchBadges(badges){
 
       React.useMemo( () => {
         const result = badges.filter(badge => {
-          return ` ${badge.firstName} ${badge.lastName}`.toLowerCase().includes(query.toLowerCase())
+          return ` ${badge.nombre} `.toLowerCase().includes(query.toLowerCase())
         })
 
         return setfilteredBadges(result)
@@ -32,7 +32,7 @@ function Badgeslist (props)
            return (
                <div>
                    <div className="form-group">
-                     <label><h3>Filter Badges</h3></label>
+                     <label><h3>Buscar Animal</h3></label>
                      <input type="text" className="form-control" 
                            value={query}
                            onChange={ e => {
@@ -41,9 +41,9 @@ function Badgeslist (props)
                      />
                   </div>
                    <h3>
-                       No badges were found
+                       Ningún animal fue encontrado
                    </h3>
-                   <Link to="badges/new" className="btn btn-primary">Create new badge</Link>
+                   <Link to="badges/new" className="btn btn-primary">Añadir nuevo animal</Link>
                </div>
            )
        }
@@ -51,7 +51,7 @@ function Badgeslist (props)
        return (
         <div className="BadgesList">
           <div className="form-group">
-             <label><h3>Filter Badges</h3></label>
+             <label><h3>Buscar Animal</h3></label>
              <input type="text" className="form-control" 
              value={query}
              onChange={ e => {
@@ -71,13 +71,16 @@ function Badgeslist (props)
                                   className="BadgesListItem__avatar" email={badge.email} >
                                   </Gravatar>
                                 <div>
-                                       <h4> {badge.firstName} {badge.lastName}</h4> 
+                                       <h4> {badge.nombre} </h4> 
                                        <p className="twitter__blue_font">
                                           <img src={favicon} alt="favicon" />
-                                           @{badge.twitter}
+                                           {badge.peso} kg
                                        </p>
                                        <p> 
-                                          {badge.jobTitle}
+                                           Valor: {badge.valor}
+                                       </p>
+                                       <p> 
+                                           Edad: {badge.edad}
                                        </p>
                                 </div>
 
