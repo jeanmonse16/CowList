@@ -11,9 +11,10 @@ import BadgeEdit from "../pages/BadgeEdit";
 import BadgeDetails from "../pages/BadgeDetailsContainer"
 
 function App (){
+   const basename = process.env.NODE_ENV === 'development' ? '/' : '/projectname'
    return (
 
-       <BrowserRouter>
+       <BrowserRouter basename={basename}>
          <Layout>
           <Switch>
               <Route exact path="/badges" component={Badges} />

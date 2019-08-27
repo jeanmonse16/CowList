@@ -2,7 +2,7 @@
   "name": "platzi-badges",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://jeanmonse16.github.io/CowList",
+  "homepage":"https://jeanmonse16.github.io/CowList/",
   "scripts": {
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
