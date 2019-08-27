@@ -73,11 +73,11 @@ function Badgeslist (props)
                                 <div>
                                        <h4> {badge.nombre} </h4> 
                                        <p className="twitter__blue_font">
-                                          <img src={favicon} alt="favicon" />
+
                                            {badge.peso} kg
                                        </p>
                                        <p> 
-                                           Valor: {badge.valor}
+                                           Valor: {badge.valor} $
                                        </p>
                                        <p> 
                                            Edad: {badge.edad}
