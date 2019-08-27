@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Navbar.css";
-import conflogo from "../images/logo.svg"
+import vacalogo from "../images/logovaca.svg"
 
 class Navbar extends React.Component{
     render()
@@ -10,9 +10,9 @@ class Navbar extends React.Component{
 
             <div className="container-fluid">
              <a className="Navbar__brand" href="/">
-               <img  className="Navbar__brand-logo" src={conflogo} alt="logo"></img>
-               <span className="font-weight-light" >Platzi</span>
-               <span className="font-weight-bold" >Conf</span> 
+               <img  className="Navbar__brand-logo" src={vacalogo} alt="logo"></img>
+               <span className="font-weight-light" >Cow</span>
+               <span className="font-weight-bold" >List</span> 
              </a>
             </div>
           

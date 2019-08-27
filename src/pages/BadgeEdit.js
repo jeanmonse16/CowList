@@ -122,7 +122,7 @@ class BadgeEdit extends React.Component{
                </div>
                <div className="col-6">
                     
-                      <h1 className="">Edit Attendants</h1>
+                      <h1 className="">Editar</h1>
                       <Badgeform 
                       onChange={this.handleChange} 
                       formValues={this.state.form} 

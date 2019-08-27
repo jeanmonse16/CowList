@@ -74,7 +74,7 @@ class Badgenew extends React.Component{
                      />
                </div>
                <div className="col-6">
-                     <h1 className="">New Attendants</h1>
+                     <h1 className="">Nuevo Animal</h1>
                      <Badgeform 
                      onChange={this.handleChange} 
                      formValues={this.state.form} 

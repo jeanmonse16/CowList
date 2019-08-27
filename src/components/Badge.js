@@ -11,7 +11,7 @@ class Badge extends React.Component{
        </div>
 
        <div className="Badge__section-name">
-           <Gravatar className="Badge__avatar" email={this.props.email}  />
+                 
            <h1>{this.props.nombre} </h1>
        </div>
        
@@ -22,7 +22,7 @@ class Badge extends React.Component{
        </div>
        
        <div className="Badge__footer">
-          #platziconf
+          #cowlist
        </div>
        
        </div>

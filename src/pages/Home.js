@@ -4,8 +4,9 @@ import {Link} from "react-router-dom";
 
 import "./styles/Home.css";
 
-import astronauts from "../images/astronauts.svg";
+import logo from "../images/cowlist-logo.svg";
 import platziconf from "../images/platziconf-logo.svg";
+import vacagrande from "../images/vacagrande.svg"
 
 class Home extends React.Component{
     render(){
@@ -19,15 +20,15 @@ class Home extends React.Component{
                           alt="conf-logo" src={platziconf}
                         /> 
                         <h1 className="Home__badge">
-                            Badge Management <br/> System
+                            Sistema de Control <br/> de Bovinos
                         </h1>
                         <Link to="/badges" className="btn btn-primary">
-                          Start!
+                          Empezar!
                         </Link>
                      </div>
                      <div className="col-6">
                         <img 
-                        alt="astronauts" src={astronauts}
+                        alt="astronauts" src={vacagrande}
                         />
                      </div>
 

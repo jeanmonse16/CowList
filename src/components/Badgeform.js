@@ -44,7 +44,7 @@ class Badgeform extends React.Component{
                         <label> Edad</label>
                         <input value={this.props.formValues.edad} onChange={this.props.onChange} className="form-control" type="text" name="edad" ></input>
                     </div>
-                    <button onClick={this.props.onClick} className="btn btn-primary" type="button">Save</button>
+                    <button onClick={this.props.onClick} className="btn btn-primary" type="button">Guardar</button>
                     {this.props.error && (<p className="text-danger">
                         {this.props.error.message}
                     </p>) }
